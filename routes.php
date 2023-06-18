@@ -47,3 +47,14 @@ $router->patch('/admin-order', 'controllers/admin-orders/update.php')->only('aut
 $router->get('/admin-orders/create', 'controllers/admin-orders/create.php')->only('auth');
 $router->post('/admin-orders', 'controllers/admin-orders/store.php')->only('auth');
 
+// ------------------------------ Users routes
+
+$router->get('/users', 'controllers/users/index.php')->only('auth')->only('auth');
+$router->get('/user', 'controllers/users/show.php')->only('auth');
+$router->delete('/user', 'controllers/users/destroy.php')->only('auth');
+
+$router->get('/user/edit', 'controllers/users/edit.php')->only('auth');
+$router->patch('/user', 'controllers/users/update.php')->only('auth');
+
+$router->get('/users/create', 'controllers/users/create.php')->only('auth');
+$router->post('/users', 'controllers/users/store.php')->only('auth');
