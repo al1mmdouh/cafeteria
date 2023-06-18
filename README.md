@@ -26,7 +26,7 @@ Order tracking to view all current orders and their statuses.
 Backend: PHP
 Database: MySQL
 Frontend: HTML, CSS, JavaScript
-Frameworks/Libraries: [List any frameworks or libraries used, if applicable]
+Frameworks/Libraries: Tailwind
 
 ## Usage
 
