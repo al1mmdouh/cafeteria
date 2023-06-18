@@ -25,7 +25,7 @@ $router->post('/products', 'controllers/products/store.php')->only('auth');
 
 // ------------------------------ Order routes
 
-$router->get('/orders', 'controllers/orders/index.php')->only('auth')->only('auth');
+$router->get('/orders', 'controllers/orders/index.php')->only('auth');
 $router->get('/order', 'controllers/orders/show.php')->only('auth');
 $router->delete('/order', 'controllers/orders/destroy.php')->only('auth');
 
@@ -49,7 +49,7 @@ $router->post('/admin-orders', 'controllers/admin-orders/store.php')->only('auth
 
 // ------------------------------ Users routes
 
-$router->get('/users', 'controllers/users/index.php')->only('auth')->only('auth');
+$router->get('/users', 'controllers/users/index.php')->only('auth');
 $router->get('/user', 'controllers/users/show.php')->only('auth');
 $router->delete('/user', 'controllers/users/destroy.php')->only('auth');
 
